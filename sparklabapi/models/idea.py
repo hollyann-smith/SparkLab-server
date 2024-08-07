@@ -6,7 +6,7 @@ from sparklabapi.models.user import User
 class Idea(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
-    description = models.CharField()
+    description = models.CharField(max_length=200)
     saved = models.BooleanField()
-    img = models.CharField()
-    supply = models.ManyToManyField(Supply)
+    img = models.CharField(max_length=200)
+    supplies = models.ManyToManyField(Supply)
