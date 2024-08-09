@@ -9,4 +9,4 @@ class Idea(models.Model):
     description = models.CharField(max_length=200)
     saved = models.BooleanField()
     img = models.CharField(max_length=200)
-    supplies = models.ManyToManyField(Supply)
+    supplies = models.ManyToManyField(Supply, related_name='ideas')

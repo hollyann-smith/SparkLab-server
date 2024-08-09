@@ -14,8 +14,24 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import include, path
+from rest_framework import routers
+
+from sparklabapi.views.auth import check_user, register_user
+from sparklabapi.views.collection import CollectionView
+from sparklabapi.views.idea import IdeaView
+from sparklabapi.views.supply import SupplyView
+from sparklabapi.views.users import UserView
+
+router = routers.DefaultRouter(trailing_slash=False)
+router.register(r'supplies', SupplyView, 'supply')
+router.register(r'users', UserView, 'user')
+router.register(r'ideas', IdeaView, 'idea')
+router.register(r'collections', CollectionView, 'collection')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include(router.urls)),
+    path('register', register_user),
+    path('checkuser', check_user),
 ]
