@@ -1,5 +1,5 @@
 
-![Screenshot 2024-08-12 at 6 03 30 PM](https://github.com/user-attachments/assets/ff2b5f76-2fba-4a39-a29d-15d101dcaad0)
+![Screenshot 2024-07-29 at 9 48 17 PM](https://github.com/user-attachments/assets/da23fe71-04dd-408c-a652-73de1dac5f74)
 
 # Spark Lab API
 
