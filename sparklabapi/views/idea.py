@@ -61,6 +61,9 @@ class IdeaView(ViewSet):
             return Response({'error': 'Missing required fields'}, status=status.HTTP_400_BAD_REQUEST)      
 
   def destroy(self, request, pk):
-    idea = Idea.objects.get(pk=pk)
-    idea.delete()
-    return Response(status=status.HTTP_204_NO_CONTENT)
+        try:
+            idea = Idea.objects.get(pk=pk)
+            idea.delete()
+            return Response({'message': 'Idea deleted successfully'}, status=status.HTTP_204_NO_CONTENT)
+        except Idea.DoesNotExist:
+            return Response({'message': 'Idea not found'}, status=status.HTTP_404_NOT_FOUND)

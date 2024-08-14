@@ -40,6 +40,20 @@ class UserView(ViewSet):
             return Response(serializer.data)
         except User.DoesNotExist:
             return Response({'message': 'User not found'}, status=status.HTTP_404_NOT_FOUND)
+        
+    def patch(self, request, pk):
+            """Handle PATCH requests to update only the username of an existing user"""
+            try:
+                user = User.objects.get(pk=pk)
+                
+                if "username" in request.data:
+                    user.username = request.data["username"]
+                    user.save()
+
+                serializer = UserSerializer(user)
+                return Response(serializer.data, status=status.HTTP_200_OK)           
+            except User.DoesNotExist:
+                return Response({'message': 'User not found'}, status=status.HTTP_404_NOT_FOUND)
 
     def destroy(self, request, pk):
         """Handle DELETE requests to delete a user"""

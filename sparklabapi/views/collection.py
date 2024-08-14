@@ -57,6 +57,9 @@ class CollectionView(ViewSet):
             return Response({'error': 'Missing required fields'}, status=status.HTTP_400_BAD_REQUEST)   
 
     def destroy(self, request, pk):
-      collection = Collection.objects.get(pk=pk)
-      collection.delete()
-      return Response(status=status.HTTP_204_NO_CONTENT)
+      try:
+        collection = Collection.objects.get(pk=pk)
+        collection.delete()
+        return Response({'message': 'Collection deleted successfully'}, status=status.HTTP_204_NO_CONTENT)
+      except Collection.DoesNotExist:
+              return Response({'message': 'Collection not found'}, status=status.HTTP_404_NOT_FOUND)
