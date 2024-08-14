@@ -2,13 +2,13 @@
 
 SparkLab API is a backend service for managing creative activity ideas for children. It allows users to submit, organize, and retrieve ideas based on the supplies they have on hand. This API is built using Django and provides endpoints for managing users, ideas, supplies, collections, comments, and ratings.
 
-Features
+## Features
 User Management: Create, view, update, and manage user profiles.
 Idea Management: Add, update, delete, and retrieve creative activity ideas.
 Supply Management: Manage the supplies associated with the ideas.
 Collection Management: Organize ideas into collections for easy access.
 
-DOCUMENTATION
+## DOCUMENTATION
 https://documenter.getpostman.com/view/29695825/2sA3s6EV3z
 
 ## Getting Started:
