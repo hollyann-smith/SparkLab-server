@@ -1,0 +1,22 @@
+[
+  {
+    "model": "sparklabapi.collection",
+    "pk": 1,
+    "fields": {
+      "name": "Fun Activities",
+      "user": 1,
+      "cover": "https://ae01.alicdn.com/kf/S743d49b4035046aab0efb0f17b2cef652/Kids-Science-Laboratory-Montessori-Toys-Chemical-Experiments-Kits-STEM-Children-Educational-ToysScience-popularization-equipment.jpg",
+      "ideas": [1,2]
+    }
+  },
+  {
+    "model": "sparklabapi.collection",
+    "pk": 2,
+    "fields": {
+      "name": "Crafts",
+      "user": 2,
+      "cover": "https://i0.wp.com/outliermedia.org/wp-content/uploads/2021/01/Untitled-design-35.png?fit=900%2C600&ssl=1",
+      "ideas": [2]
+    }
+  }
+]

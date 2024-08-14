@@ -1,0 +1,30 @@
+[
+  {
+    "model": "sparklabapi.supply",
+    "pk": 1,
+    "fields": {
+      "name": "glitter"
+    }
+  },
+  {
+    "model": "sparklabapi.supply",
+    "pk": 2,
+    "fields": {
+      "name": "glue"
+    }
+  },
+  {
+    "model": "sparklabapi.supply",
+    "pk": 3,
+    "fields": {
+      "name": "paper"
+    }
+  },
+  {
+    "model": "sparklabapi.supply",
+    "pk": 4,
+    "fields": {
+      "name": "scissors"
+    }
+  }
+]

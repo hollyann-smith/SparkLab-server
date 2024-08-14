@@ -1,0 +1,26 @@
+[
+  {
+    "model": "sparklabapi.idea",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "title": "Glitter Slime",
+      "description": "Make fun glitter slime with glue and glitter.",
+      "saved": false,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq3Lyi7WejNAR3kFBM4kNONlNVdqp1u8QzPjQu5FGgEzm1fPism1bmv1s8cXTKpzpbdB8&usqp=CAU",
+      "supplies": [1, 2]
+    }
+  },
+  {
+    "model": "sparklabapi.idea",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "title": "Paper Heart Chains",
+      "description": "Create paper heart chains with paper and scissors.",
+      "saved": true,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiKocp0hIHXEJjO1AqSP7WmqjAb8nePzbFuQ&s",
+      "supplies": [3, 4]
+    }
+  }
+]

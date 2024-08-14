@@ -1,0 +1,18 @@
+[
+  {
+    "model": "sparklabapi.user",
+    "pk": 1,
+    "fields": {
+      "username": "Holly",
+      "uid": "uid123"
+    }
+  },
+  {
+    "model": "sparklabapi.user",
+    "pk": 2,
+    "fields": {
+      "username": "Kim",
+      "uid": "uid456"
+    }
+  }
+]
