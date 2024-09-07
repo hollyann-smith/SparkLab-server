@@ -26,5 +26,82 @@
     "fields": {
       "name": "scissors"
     }
+  },
+  {
+    "model": "sparklabapi.supply",
+    "pk": 5,
+    "fields": {
+      "name": "toilet paper roll"
+    }
+  },
+  {
+    "model": "sparklabapi.supply",
+    "pk": 6,
+    "fields": {
+      "name": "peanut butter"
+    }
+  },
+  {
+    "model": "sparklabapi.supply",
+    "pk": 7,
+    "fields": {
+      "name": "birdseed"
+    }
+  },
+  {
+    "model": "sparklabapi.supply",
+    "pk": 8,
+    "fields": {
+      "name": "pasta"
+    }
+  },
+  {
+    "model": "sparklabapi.supply",
+    "pk": 9,
+    "fields": {
+      "name": "food coloring"
+    }
+  },
+  {
+    "model": "sparklabapi.supply",
+    "pk": 10,
+    "fields": {
+      "name": "non-toxic paint"
+    }
+  },
+  {
+    "model": "sparklabapi.supply",
+    "pk": 11,
+    "fields": {
+      "name": "paper"
+    }
+  },
+  {
+    "model": "sparklabapi.supply",
+    "pk": 12,
+    "fields": {
+      "name": "air-dry clay"
+    }
+  },
+  {
+    "model": "sparklabapi.supply",
+    "pk": 13,
+    "fields": {
+      "name": "paint"
+    }
+  },
+  {
+    "model": "sparklabapi.supply",
+    "pk": 14,
+    "fields": {
+      "name": "egg cartons"
+    }
+  },
+  {
+    "model": "sparklabapi.supply",
+    "pk": 15,
+    "fields": {
+      "name": "craft supplies"
+    }
   }
 ]

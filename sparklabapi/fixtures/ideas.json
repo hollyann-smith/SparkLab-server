@@ -15,12 +15,72 @@
     "model": "sparklabapi.idea",
     "pk": 2,
     "fields": {
-      "user": 2,
+      "user": 5,
       "title": "Paper Heart Chains",
       "description": "Create paper heart chains with paper and scissors.",
       "saved": true,
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiKocp0hIHXEJjO1AqSP7WmqjAb8nePzbFuQ&s",
       "supplies": [3, 4]
+    }
+  },
+  {
+    "model": "sparklabapi.idea",
+    "pk": 3,
+    "fields": {
+      "user": 1,
+      "title": "DIY Bird Feeder",
+      "description": "Create a simple bird feeder using a toilet paper roll, peanut butter, and birdseed.",
+      "saved": false,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH7z9UOxtmMphMOMR3x-oW0I8HtfHxlZ5E7EBRGt-Ew4vW7VZKn3nXj8afyt2dVskRWT6B2w&usqp=CAU",
+      "supplies": [5, 6, 7]
+    }
+  },
+  {
+    "model": "sparklabapi.idea",
+    "pk": 4,
+    "fields": {
+      "user": 2,
+      "title": "Rainbow Pasta Necklace",
+      "description": "Make colorful pasta necklaces by dyeing pasta with food coloring and stringing them together.",
+      "saved": true,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm9q8BL0Gi2X4gfDNolZZkCkQAXh6e1B6aYhF2GeCjfi9wo4A-wL52lRhBZl-TGZEtBA9tAfs&usqp=CAU",
+      "supplies": [8, 9]
+    }
+  },
+  {
+    "model": "sparklabapi.idea",
+    "pk": 5,
+    "fields": {
+      "user": 2,
+      "title": "Handprint Art",
+      "description": "Create a handprint painting using non-toxic paint and paper.",
+      "saved": false,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVHnXVuTTJLdNhu3zKn-R59pL-Xm68c__0m7Qu8LlG6OZ3bqDlsqrrCCxgQ9XoTVFsPgDJQdA&usqp=CAU",
+      "supplies": [10, 11]
+    }
+  },
+  {
+    "model": "sparklabapi.idea",
+    "pk": 6,
+    "fields": {
+      "user": 5,
+      "title": "Clay Animal Sculptures",
+      "description": "Make small animal sculptures using air-dry clay and paint.",
+      "saved": true,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1C1KkIcZ1CTSS69Z3bd1D2r9Tr0FOrak5TAkRaLKN5p5jRk1T64aIGw0hl9KOt98qw8XBy5G&usqp=CAU",
+      "supplies": [12, 13]
+    }
+  },
+  {
+    "model": "sparklabapi.idea",
+    "pk": 7,
+    "fields": {
+      "user": 5,
+      "title": "Egg Carton Animals",
+      "description": "Transform egg cartons into fun animals with paint and craft supplies.",
+      "saved": false,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR33Aa5ktkRX7Gb_3URFVdCoGH0qYkP7WzZ9x43DGoEybWthQzLEUEW4S2-N6e2aUfu_1W9Cw&usqp=CAU",
+      "supplies": [14, 15]
     }
   }
 ]
