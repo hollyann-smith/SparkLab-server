@@ -9,24 +9,30 @@ https://docs.djangoproject.com/en/4.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
-
+import os
 from pathlib import Path
+from environ import Env
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+env = Env()
+env.read_env(os.path.join(BASE_DIR, ".env"))
+
+
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-8s%064ffg@_4l2m9dfa!u265mam&+ul*@zmd8!rfoh#kp-ekvc'
-
+# SECRET_KEY = 'django-insecure-8s%064ffg@_4l2m9dfa!u265mam&+ul*@zmd8!rfoh#kp-ekvc'
+SECRET_KEY = env("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG = True
+DEBUG = env.bool("DEBUG")
 
-ALLOWED_HOSTS = []
-
+# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = env.list("ALLOWED_HOSTS")
 
 # Application definition
 
@@ -42,10 +48,12 @@ INSTALLED_APPS = [
     'sparklabapi',
 ]
 
-CORS_ORIGIN_WHITELIST = (
-    'http://localhost:3000',
-    'http://127.0.0.1:3000'
-)
+# CORS_ORIGIN_WHITELIST = (
+#     'http://localhost:3000',
+#     'http://127.0.0.1:3000'
+# )
+# You might have to add this entire variable if you're starting from scratch
+CORS_ORIGIN_WHITELIST = env.list("CORS_ORIGIN_WHITELIST")
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -56,6 +64,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'sparklab.urls'
@@ -63,7 +72,7 @@ ROOT_URLCONF = 'sparklab.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, "templates")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -82,13 +91,22 @@ WSGI_APPLICATION = 'sparklab.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
+import dj_database_url
+
+DATABASES = {
+  'default': dj_database_url.config(
+    default='sqlite:///{path}/db.sqlite3'.format(path=BASE_DIR),
+    conn_max_age=600,
+    conn_health_checks=True,
+  )
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
@@ -125,6 +143,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
+
+STATICFILES_DIRS = [
+  os.path.join(BASE_DIR, 'static'),
+]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
