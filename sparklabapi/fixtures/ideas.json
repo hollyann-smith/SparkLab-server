@@ -1,18 +1,6 @@
 [
   {
     "model": "sparklabapi.idea",
-    "pk": 1,
-    "fields": {
-      "user": 1,
-      "title": "Glitter Slime",
-      "description": "To make glitter slime, you'll need clear glue, water, baking soda, contact lens solution, and glitter. Start by pouring 4 ounces of clear glue into a bowl. Add 1/2 cup of water and mix well. Then, stir in about 1/2 teaspoon of baking soda to help thicken the mixture. Now it's time to add the glitter! Pour in as much as you like and mix thoroughly. Finally, add 1 tablespoon of contact lens solution and stir until the slime begins to form. Keep kneading the slime with your hands until it's stretchy and no longer sticky. Store your glitter slime in an airtight container for future play.",
-      "saved": false,
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq3Lyi7WejNAR3kFBM4kNONlNVdqp1u8QzPjQu5FGgEzm1fPism1bmv1s8cXTKpzpbdB8&usqp=CAU",
-      "supplies": [1, 2]
-    }
-  },
-  {
-    "model": "sparklabapi.idea",
     "pk": 2,
     "fields": {
       "user": 5,

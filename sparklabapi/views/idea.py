@@ -9,7 +9,8 @@ from sparklabapi.models.user import User
 class IdeaSerializer(serializers.ModelSerializer):
   class Meta:
     model = Idea
-    fields = ('id', 'user', 'title', 'description', 'saved', 'img', 'supplies' )
+    # fields = ('id', 'user', 'title', 'description', 'saved', 'img', 'supplies' )
+    fields = '__all__'
     depth = 3
     
 class IdeaView(ViewSet):
