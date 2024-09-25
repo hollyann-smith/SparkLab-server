@@ -71,13 +71,6 @@
   },
   {
     "model": "sparklabapi.supply",
-    "pk": 11,
-    "fields": {
-      "name": "paper"
-    }
-  },
-  {
-    "model": "sparklabapi.supply",
     "pk": 12,
     "fields": {
       "name": "air-dry clay"
@@ -102,6 +95,90 @@
     "pk": 15,
     "fields": {
       "name": "craft supplies"
+    }
+  },
+  {
+    "model": "sparklabapi.supply",
+    "pk": 17,
+    "fields": {
+      "name": "crayons"
+    }
+  },
+  {
+    "model": "sparklabapi.supply",
+    "pk": 18,
+    "fields": {
+      "name": "leaves"
+    }
+  },
+  {
+    "model": "sparklabapi.supply",
+    "pk": 19,
+    "fields": {
+      "name": "bottle caps"
+    }
+  },
+  {
+    "model": "sparklabapi.supply",
+    "pk": 20,
+    "fields": {
+      "name": "foam stickers"
+    }
+  },
+  {
+    "model": "sparklabapi.supply",
+    "pk": 22,
+    "fields": {
+      "name": "paper plate"
+    }
+  },
+  {
+    "model": "sparklabapi.supply",
+    "pk": 23,
+    "fields": {
+      "name": "markers"
+    }
+  },
+  {
+    "model": "sparklabapi.supply",
+    "pk": 24,
+    "fields": {
+      "name": "string"
+    }
+  },
+  {
+    "model": "sparklabapi.supply",
+    "pk": 25,
+    "fields": {
+      "name": "tissue paper"
+    }
+  },
+  {
+    "model": "sparklabapi.supply",
+    "pk": 26,
+    "fields": {
+      "name": "contact paper"
+    }
+  },
+  {
+    "model": "sparklabapi.supply",
+    "pk": 28,
+    "fields": {
+      "name": "rocks"
+    }
+  },
+  {
+    "model": "sparklabapi.supply",
+    "pk": 29,
+    "fields": {
+      "name": "acrylic paint"
+    }
+  },
+  {
+    "model": "sparklabapi.supply",
+    "pk": 30,
+    "fields": {
+      "name": "paintbrushes"
     }
   }
 ]
