@@ -14,5 +14,13 @@
       "username": "Kim",
       "uid": "uid456"
     }
+  },
+  {
+    "model": "sparklabapi.user",
+    "pk": 5,
+    "fields": {
+      "username": "H-Money!",
+      "uid": "sDnyOFkhQZhjIAplP7bzt2"
+    }
   }
 ]
