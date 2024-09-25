@@ -1,1 +1,1 @@
-web: gunicorn sparklab.wsgi --log-file -
+web: gunicorn sparklab.wsgi
