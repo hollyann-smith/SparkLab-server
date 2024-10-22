@@ -1,12 +1,12 @@
 [
   {
     "model": "sparklabapi.collection",
-    "pk": 1,
+    "pk": 2,
     "fields": {
       "name": "Activities",
       "user": 1,
       "cover": "https://ae01.alicdn.com/kf/S743d49b4035046aab0efb0f17b2cef652/Kids-Science-Laboratory-Montessori-Toys-Chemical-Experiments-Kits-STEM-Children-Educational-ToysScience-popularization-equipment.jpg",
-      "ideas": [1,2]
+      "ideas": [2,7]
     }
   },
   {
@@ -16,7 +16,7 @@
       "name": "Outdoor Fun",
       "user": 5,
       "cover": "https://www.misskatecuttables.com/uploads/shopping_cart/12493/large_cute-sun-0521.png",
-      "ideas": [3]
+      "ideas": [3,4]
     }
   },
   {
